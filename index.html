@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cifra de César e Base64</title>
+    <link rel="stylesheet" href="./assets/style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Conversão Cifra de César e Base64</h1>
+    </header>
+    <main>
+        <form>
+            <div class="message-box">
+                <label for="message">Mensagem:</label>
+                <input type="text" name="message" id="message">
+            </div>
+            <div class="base-box">
+                <div>
+                    <input type="radio" name="base-option" id="cifra">
+                    <label for="base-option">Cifra de César</label>
+                    <div class="add-box display-selection">
+                        <label for="blocks-added">Incremento:</label>
+                        <input type="number" name="blocks-added" id="blocks-added">
+                    </div>
+                </div>
+                <div>
+                    <input type="radio" name="base-option" id="base64">
+                    <label for="base-option">Base64</label>
+                </div>
+            </div>
+            <div class="code-box">
+                <input type="radio" name="code-option" id="code">
+                <label for="code-option">Codificar</label>
+                <input type="radio" name="code-option" id="decode">
+                <label for="code-option">Decodificar</label>
+            </div>
+            <button id="convert-button">Converter</button>
+            <textarea placeholder="Sua mensagem irá aparecer aqui" id="message-appear" readonly disabled></textarea>
+        </form>
+    </main>
+    <footer>
+        <h6>©Raphael Vicentini</h6>
+    </footer>
+</body>
+<script type="module" src="./app.js"></script>
+
+</html>
